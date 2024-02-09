@@ -52,44 +52,49 @@
 
 \bigskip
 
-\renewcommand{\thefigure}{\theenumi}
-\renewcommand{\thetable}{\theenumi}
-\textbf{Question}:\\A contract on construction job specifies a penalty for delay of completion beyond a
-certain date as follows: \rupee 200 for the first day, \rupee 250 for the second day, \rupee 300 for the third
-day, etc., the penalty for each succeeding day being \rupee 50 more than for the preceding day.
-How much money the contractor has to pay as penalty, if he has delayed the work by 30
-days?\\
-\textbf{Solution}:\\
-Since the penalty is increasing \rupee 50 per day we can use the formula of an arithmetic progression.The formula for sum of first n numbers of an arithmetic progression is:
-\begin{align}
-    S_n=\frac{n}{2}[2a+(n-1)\times d]
-\end{align}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+\textbf{Question}:\\A contract on construction job specifies a penalty for delay of completion beyond a certain date as follows: \rupee $200$ for the first day, \rupee $250$ for the second day, \rupee $300$ for the third day, etc., the penalty for each succeeding day being \rupee $50$ more than for the preceding day.How much money the contractor has to pay as penalty, if he has delayed the work by $30$ days?\\
+\textbf{Solution}:
+\begin{table}[h]
+    \centering
+    \input{tables/table.tex}
+    \caption{Variables Used}
+    \label{tab:table_10.5.3.15}
+\end{table}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1.1\linewidth]{/root/ee1205/assign10_5_3_15/figs/graph.png}
+    \includegraphics[width=1.1\linewidth]{figs/graph.png}
     \caption{Stem Plot of x(n)}
     \label{stemplot1}
 \end{figure}
-\begin{tabular}{|c|c|c|}
-    \hline
-    \textbf{Variable} & \textbf{Description} & \textbf{Value} \\
-    \hline
-    x(N) & General term($N_{th}$ term) & $x(0)+N\times d$\\
-    \hline
-    x(0) & First term of AP & 200\\
-    \hline
-    n & number of terms in the AP & 30\\
-    \hline
-    d & common difference in the AP & 50\\
-    \hline
-\end{tabular}
 \begin{align}
-S_n& =\frac{30}{2}[2\times 200+(30-1)\times 50]\\
-S_n& =15[400+29\times 50]\\
-S_n& =15[400+1450]\\
-S_n& =15[1850]\\
-S_n& =27750
+x(n)&=(200+50n)u(n)\\
+X(z)&=\frac{200}{1-z^{-1}}+\frac{200z^{-1}}{(1-z^{-1})^2}\:\:
+\quad\abs{z}>\abs{1}\\
+y\brak{n}&=x\brak{n}*u\brak{n}\\
+Y\brak{z}&=X\brak{z}\,U\brak{z}\\
+\implies Y\brak{z}&=\brak{\frac{200}{1-z^{-1}}+\frac{50z^{-1}}{\brak{1-
+z^{-1}}^2}}\brak{\frac{1}{1-z^{-1}}}\\
+&=\frac{200}{\brak{1-z^{-1}}^2}+\frac{50z^{-1}}{\brak{1-z^{-1}}^3}
 \end{align}
-$\therefore $The total amount of money that the contractor has to pay as penalty for the delay is \rupee 27750$
-$
+
+Contour integration to find z transform
+\begin{align}
+y(29)&=\frac{1}{2{\pi}j}{\oint_c}Y\brak{Z}z^{28}dz\\
+&=\frac{1}{2{\pi}j}{\oint_c}{\frac{(200-150z^{-1})z^{28}}{\brak{1-z^{-1}}^{3}}}\\
+\end{align}
+pole at 1 repeated 3 times
+\begin{align}
+m&=3\\
+R&=\frac{1}{\brak{m-1}!}\lim_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak{\brak{z
+a}^mf{\brak{z}}}\\
+&=\frac{1}{\brak{2!}}\lim_{z\to 1}\frac{d^2}{dz^2}\brak{\brak{z-1}^{3}\frac{(200-150z^{-1})z^{28}}{\brak{1-z^{-1}}^3}}\\
+&=\lim_{z\to1}\frac{d^2}{dz^2}\brak{100-75z^{-1}}z^{31}
+\end{align}
+\begin{align}
+\implies y(n)&=27750
+\end{align}
+
+
 \end{document}

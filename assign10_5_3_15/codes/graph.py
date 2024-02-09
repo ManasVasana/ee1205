@@ -1,20 +1,16 @@
 import matplotlib.pyplot as plt
 
-def generate_sequence(x0, d, n):
-    return [x0 + i * d for i in range(n)]
+def plot_points_from_file(filename):
+    with open(filename, 'r') as file:
+        sequence = [int(line.strip()) for line in file]
 
-def plot_sequence(x0, d, n):
-    sequence = generate_sequence(x0, d, n)
-    plt.plot(sequence, marker='o')
-    plt.title(f"Sequence: x(n) = x(0) + n * d")
+    n_values = range(1, len(sequence) + 1)
+    plt.plot(n_values, sequence, marker='o')
+    plt.title("Sequence: y(n) = (n + 1)/2 * (2*x(0) + nd) * u(n)")
     plt.xlabel("n")
-    plt.ylabel("x(n)")
+    plt.ylabel("y(n)")
     plt.grid(True)
     plt.savefig("graph.png")
 
-# Example usage with x0=200, d=50, and n=30
-x0 = 200  # initial value
-d = 50    # common difference
-n = 30    # number of terms
-
-plot_sequence(x0, d, n)
+# Example usage
+plot_points_from_file("sequence_points.txt")
