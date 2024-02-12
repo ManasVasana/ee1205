@@ -1,10 +1,6 @@
 #include <stdio.h>
 
-#define X0 200   // initial value
-#define D 50     // common difference
-#define N_MAX 30 // maximum number of terms
-
-void generate_sequence() {
+void generate_sequence(int x0, int d, int n) {
     FILE *fp;
     fp = fopen("sequence_points.txt", "w");
 
@@ -13,8 +9,8 @@ void generate_sequence() {
         return;
     }
 
-    for (int n = 0; n < N_MAX; n++) {
-        int point = ((n + 1) / 2) * (2 * X0 + n * D);
+    for (int i = 0; i < n; i++) {
+        int point = (i + 1) / 2 * (2 * x0 + i * d);
         fprintf(fp, "%d\n", point);
     }
 
@@ -22,7 +18,11 @@ void generate_sequence() {
 }
 
 int main() {
-    generate_sequence();
+    int x0 = 200;  // initial value
+    int d = 50;    // common difference
+    int n = 30;    // number of terms
+
+    generate_sequence(x0, d, n);
 
     printf("Sequence points generated and saved in 'sequence_points.txt'\n");
 

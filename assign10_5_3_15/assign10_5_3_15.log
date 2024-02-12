@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  9 FEB 2024 11:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  12 FEB 2024 11:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**assign10_5_3_15
+**assign10_5_3_15.tex
 (./assign10_5_3_15.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16>
@@ -1285,14 +1285,23 @@ File: ts1txr.fd 2000/12/15 v3.1
 File: figs/graph.png Graphic file (type png)
 <use figs/graph.png>
 Package pdftex.def Info: figs/graph.png  used on input line 67.
-(pdftex.def)             Requested size: 277.20154pt x 207.91159pt.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 67--68
- [][] 
+
+LaTeX Warning: Reference `eq:apz' on page 1 undefined on input line 74.
+
+
+Underfull \hbox (badness 4217) in paragraph at lines 73--75
+\OT1/txr/m/n/12 From equation([]),taking Z trans-form of AP
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+
+ []
+
+
+Underfull \vbox (badness 1292) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1300,19 +1309,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  <./figs/graph.png>]
 (./assign10_5_3_15.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `assign10_5_3_15.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30401 strings out of 476091
- 598877 string characters out of 5794082
+ 30402 strings out of 476091
+ 598885 string characters out of 5794082
  1881330 words of memory out of 5000000
- 50099 multiletter control sequences out of 15000+600000
+ 50100 multiletter control sequences out of 15000+600000
  581164 words of font info for 174 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,11n,96p,1179b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,11n,96p,1183b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1322,7 +1331,7 @@ x.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on assign10_5_3_15.pdf (1 page, 166152 bytes).
+Output written on assign10_5_3_15.pdf (1 page, 164249 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
