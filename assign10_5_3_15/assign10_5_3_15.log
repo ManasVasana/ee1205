@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  12 FEB 2024 11:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  14 FEB 2024 20:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1290,20 +1290,7 @@ Package pdftex.def Info: figs/graph.png  used on input line 67.
 
 LaTeX Warning: Reference `eq:apz' on page 1 undefined on input line 74.
 
-
-Underfull \hbox (badness 4217) in paragraph at lines 73--75
-\OT1/txr/m/n/12 From equation([]),taking Z trans-form of AP
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
-
- []
-
-
-Underfull \vbox (badness 1292) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./figs/graph.png>]
@@ -1315,9 +1302,9 @@ Package rerunfilecheck Info: File `assign10_5_3_15.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30402 strings out of 476091
- 598885 string characters out of 5794082
- 1881330 words of memory out of 5000000
+ 30401 strings out of 476091
+ 598872 string characters out of 5794082
+ 1880330 words of memory out of 5000000
  50100 multiletter control sequences out of 15000+600000
  581164 words of font info for 174 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1328,13 +1315,14 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tf
 rupee/tfrupee.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txe
 x.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on assign10_5_3_15.pdf (1 page, 164249 bytes).
+share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on assign10_5_3_15.pdf (1 page, 166687 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
