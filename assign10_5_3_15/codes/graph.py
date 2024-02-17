@@ -1,16 +1,13 @@
 import matplotlib.pyplot as plt
+with open("sequence_points.txt", 'r') as file:
+    sequence = [int(line.strip()) for line in file]
+n_values = range(0, len(sequence))
 
-def plot_stem_graph_from_file(filename):
-    with open(filename, 'r') as file:
-        sequence = [int(line.strip()) for line in file]
-
-    n_values = range(1, len(sequence) + 1)
-    plt.stem(n_values, sequence, markerfmt='o', linefmt='b-', basefmt='k-')
-    plt.title("Sequence: y(n) = (n+1)/2 * (2*x(0) + n*d) u(n)")
-    plt.xlabel("n")
-    plt.ylabel("y(n)")
-    plt.grid(True)
-    plt.savefig("graph.png")
-
-# Example usage
-plot_stem_graph_from_file("sequence_points.txt")
+# Create stem plot with blue markers for most points
+plt.stem(n_values[:-1], sequence[:-1], markerfmt='bo', linefmt='b-', basefmt='k-')
+# Plot the last point with a red cross marker
+plt.stem(n_values[-1:], sequence[-1:], markerfmt='rx', linefmt='r-', basefmt='k-')
+plt.xlabel("n")
+plt.ylabel("y(n)")
+plt.grid(True)
+plt.savefig("graph.png")

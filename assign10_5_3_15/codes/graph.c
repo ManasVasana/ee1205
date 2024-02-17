@@ -1,5 +1,24 @@
 #include <stdio.h>
 
+void generate_sequence_recursive(int x0, int d, int n, int current, FILE *fp) {
+    if (current >= n) {
+        fclose(fp);
+        return;
+    }
+
+    // Calculate the value at position current using the arithmetic sequence formula
+    // y(current) = ((current + 1) / 2) * (2 * x0 + (current - 1) * d)
+    int point = ((current + 1) / 2) * (2 * x0 + (current - 1) * d);
+
+    if (point > 27750) {
+        fprintf(fp, "%d *\n", point);
+    } else {
+        fprintf(fp, "%d\n", point);
+    }
+
+    generate_sequence_recursive(x0, d, n, current + 1, fp);
+}
+
 void generate_sequence(int x0, int d, int n) {
     FILE *fp;
     fp = fopen("sequence_points.txt", "w");
@@ -9,12 +28,9 @@ void generate_sequence(int x0, int d, int n) {
         return;
     }
 
-    for (int i = 0; i < n; i++) {
-        int point = (i + 1) / 2 * (2 * x0 + i * d);
-        fprintf(fp, "%d\n", point);
-    }
+    generate_sequence_recursive(x0, d, n, 0, fp);
 
-    fclose(fp);
+    printf("Sequence points generated and saved in 'sequence_points.txt'\n");
 }
 
 int main() {
@@ -23,8 +39,6 @@ int main() {
     int n = 30;    // number of terms
 
     generate_sequence(x0, d, n);
-
-    printf("Sequence points generated and saved in 'sequence_points.txt'\n");
 
     return 0;
 }
