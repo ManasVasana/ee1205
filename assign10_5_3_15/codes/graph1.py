@@ -16,19 +16,26 @@ with open("result_terms.txt", "r") as file:
     for line in file:
         y_scatter.append(int(line.strip()))
 
+# Plot both stem plot and scatter plot on a single graph
+plt.figure(figsize=(10, 6))
+
 # Plot stem plot
-plt.stem(x_stem, y_stem, linefmt='b-', markerfmt='bo', basefmt=' ')
+plt.stem(x_stem, y_stem, linefmt='b-', markerfmt='bo', basefmt=' ', label='Stem Plot')
 
 # Plot scatter plot
-plt.scatter(range(len(y_scatter)), y_scatter, color='r', marker='X', zorder=5)  # zorder for bringing it to the front
+plt.scatter(range(len(y_scatter)), y_scatter, color='r', marker='X', zorder=5, label='Scatter Plot')
 
 # Highlight y(n) = 27750 with yellow color
 highlight_index = y_stem.index(27750)
-plt.scatter([highlight_index], [27750], color='yellow', zorder=6)  # zorder for bringing it to the front
+plt.scatter([highlight_index], [27750], color='yellow', zorder=6, label='Highlighted Point')
 
 # Add labels and title
 plt.xlabel('n')
 plt.ylabel('y(n)')
+plt.legend()
 
-# Show plot
+# Add grid lines
+plt.grid(True)
+
+# Save the plot as an image file
 plt.savefig("graph.png")
