@@ -23,7 +23,7 @@ plt.figure(figsize=(10, 6))
 plt.stem(x_stem, y_stem, linefmt='b-', markerfmt='bo', basefmt=' ', label='Stem Plot')
 
 # Plot scatter plot
-plt.scatter(range(len(y_scatter)), y_scatter, color='r', marker='X', zorder=5, label='Scatter Plot')
+plt.scatter(range(len(y_scatter)), y_scatter, color='w', marker='X', zorder=5, label='Scatter Plot')
 
 # Highlight y(n) = 27750 with yellow color
 highlight_index = y_stem.index(27750)
