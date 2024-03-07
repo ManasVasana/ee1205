@@ -1,0 +1,68 @@
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{11.9.5.3}
+\author{EE23BTECH11062 - V MANAS}
+\maketitle
+\newpage
+
+\bigskip
+\textbf{Question:}\\A sinusoid $(\sqrt{2}sin(t))\mu(t)$,where $\mu(t)$ is the step input,is applied to a system with transfer function G(s)=$\frac{1}{1+s}$.The amplitude of the steady state output is\\
+\textbf{Solution:}\\
+Given x(t)=$(\sqrt{2}sin(t))\mu(t)$ as input,\\
+By using laplace transform,
+\begin{align}
+    X(s)&=\frac{1}{1+s^2}\\
+    Y(s)&=G(s)\times X(s)\\
+    Y(s)&=(\frac{1}{1+s})(\frac{1}{1+s^2})
+\end{align}
+By finding inverse Laplace transform of Y(s),
+\begin{align}
+    y(t)=\frac{e^{-t}}{2}+\frac{1}{2}(sin(t)-cos(t))\\
+    y(t)=\frac{e^{-t}}{2}-\frac{1}{\sqrt{2}}(sin(\frac{\pi}{4}-t))
+\end{align}
+So at steady state(at t$\rightarrow\infty$) the amplitude of output will be $\frac{1}{\sqrt{2}}$
+\end{document}
