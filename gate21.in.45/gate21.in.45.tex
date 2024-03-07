@@ -26,6 +26,7 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
 \usepackage{lscape}
+\usepackage{tfrupee}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
@@ -44,15 +45,20 @@
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
 
-\title{11.9.5.3}
+\title{Gate21.IN.45}
 \author{EE23BTECH11062 - V MANAS}
 \maketitle
 \newpage
 
 \bigskip
 \textbf{Question:}\\A sinusoid $(\sqrt{2}sin(t))\mu(t)$,where $\mu(t)$ is the step input,is applied to a system with transfer function G(s)=$\frac{1}{1+s}$.The amplitude of the steady state output is\\
-\textbf{Solution:}\\
-Given x(t)=$(\sqrt{2}sin(t))\mu(t)$ as input,\\
+\textbf{Solution:}
+\begin{table}[h]
+    \centering
+    \input{tables/table.tex}
+    \caption{Transformation}
+    \label{tab:table_gate21.in.45}
+\end{table}\\
 By using laplace transform,
 \begin{align}
     X(s)&=\frac{1}{1+s^2}\\
