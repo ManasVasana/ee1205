@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  7 MAR 2024 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  7 MAR 2024 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1285,7 +1285,7 @@ File: figs/graph.png Graphic file (type png)
 Package pdftex.def Info: figs/graph.png  used on input line 64.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
-Overfull \hbox (2.69968pt too wide) detected at line 79
+Overfull \hbox (5.75568pt too wide) detected at line 79
 []
  []
 
@@ -1319,7 +1319,7 @@ fonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gate21.in.45.pdf (1 page, 67950 bytes).
+Output written on gate21.in.45.pdf (1 page, 68110 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream
