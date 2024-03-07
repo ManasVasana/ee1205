@@ -53,22 +53,22 @@
 \bigskip
 \textbf{Question:}\\A sinusoid $(\sqrt{2}sin(t))\mu(t)$,where $\mu(t)$ is the step input,is applied to a system with transfer function G(s)=$\frac{1}{1+s}$.The amplitude of the steady state output is\\
 \textbf{Solution:}
-\begin{table}[h]
+\begin{figure}[h]
     \centering
-    \input{tables/table.tex}
-    \caption{Transformation}
-    \label{tab:table_gate21.in.45}
-\end{table}\\
-By using laplace transform,
+    \includegraphics[width=1.0\linewidth]{figs/graph.png}
+    \caption{plot of y(n)}
+\end{figure}\\
 \begin{align}
-    X(s)&=\frac{1}{1+s^2}\\
-    Y(s)&=G(s)\times X(s)\\
-    Y(s)&=(\frac{1}{1+s})(\frac{1}{1+s^2})
+    G(s)&=\frac{1}{s+1}\\
+    G(j\omega)&=\frac{1}{j\omega+1}\\
+    |G(j\omega)|&=\frac{1}{\sqrt{\omega^2+1}}\\
+    \langle G(j\omega)&=-tan^{-1}(\omega)\\
+    |G(j\omega)|_{\omega=1}&=\frac{1}{\sqrt{2}},\langle G(j\omega)_{\omega=1}=-45\degree
 \end{align}
-By finding inverse Laplace transform of Y(s),
 \begin{align}
-    y(t)=\frac{e^{-t}}{2}+\frac{1}{2}(sin(t)-cos(t))\\
-    y(t)=\frac{e^{-t}}{2}-\frac{1}{\sqrt{2}}(sin(\frac{\pi}{4}-t))
+    y(t)&=\sqrt{2}|G(j\omega)|_{\omega=1}sin(t-\langle G(j\omega)_{\omega=1})u(t)\\
+    &=\sqrt{2}\times\frac{1}{\sqrt{2}}sin(t-45\degree)u(t)\\
+    &=sin(t-45\degree)u(t)
 \end{align}
-So at steady state(at t$\rightarrow\infty$) the amplitude of output will be $\frac{1}{\sqrt{2}}$
+So,the amplitude of steady state output is 1
 \end{document}
