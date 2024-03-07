@@ -1,19 +1,19 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
-# Define the time range
-t = np.linspace(1, 15, 1000)  # From 0 to 10 seconds, with 1000 points
-
-# Define the function y(t)
-y = np.sin(t - np.pi/4)  # Define the original function, y(t) = sin(t - pi/4)
+# Read data points from the file
+t_values = []
+y_values = []
+with open('data_points.txt', 'r') as file:
+    for line in file:
+        t, y = map(float, line.strip().split())
+        t_values.append(t)
+        y_values.append(y)
 
 # Plot the graph
-plt.plot(t, y)
+plt.plot(t_values, y_values, marker='o')
 plt.xlabel('Time')
 plt.ylabel('y(t)')
-
-# Set x-axis ticks for every 1 unit distance
-plt.xticks(np.arange(1, 16, 1))
-
+plt.xticks(np.arange(1,11,1))
 plt.grid(True)
 plt.savefig("graph.png")
