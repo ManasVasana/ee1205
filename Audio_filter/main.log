@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  5 APR 2024 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  5 APR 2024 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1502,7 +1502,7 @@ Underfull \hbox (badness 2460) in paragraph at lines 527--529
  []
 
 (./tables/audio_filter_tab.tex
-Overfull \hbox (11.16277pt too wide) in paragraph at lines 5--14
+Overfull \hbox (11.16pt too wide) in paragraph at lines 5--14
  [][] 
  []
 
@@ -1556,7 +1556,7 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 503207 bytes).
+Output written on main.pdf (8 pages, 503180 bytes).
 PDF statistics:
  384 PDF objects out of 1000 (max. 8388607)
  328 compressed objects within 4 object streams
